@@ -1,0 +1,36 @@
+.navLink {
+  color: rgba(245, 245, 245, 1);
+  padding: 0.75rem 0.5rem 0.25rem 0.5rem;
+  width: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 1);
+
+    :global(body.hasHover) & {
+      color: rgba(245, 245, 245, 0.7);
+    }
+  }
+
+  &:active {
+    color: rgba(245, 245, 245, 0.5);
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  &.active {
+    border-bottom-style: solid;
+    border-color: #e0e0e0;
+  }
+}

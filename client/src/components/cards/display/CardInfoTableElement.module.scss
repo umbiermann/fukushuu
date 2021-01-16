@@ -1,0 +1,14 @@
+.infoCell {
+  word-break: normal;
+  white-space: pre-wrap;
+}
+
+.furiganaButton {
+  opacity: 0.8;
+  padding: 0 !important;
+  font-size: 0.75rem !important;
+
+  &.loading {
+    opacity: 0.5;
+  }
+}

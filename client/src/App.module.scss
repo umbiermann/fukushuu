@@ -1,0 +1,6 @@
+@use './styles/global.scss';
+
+.mainContainer {
+  margin-top: global.$header-height + global.$spacer * 3;
+  margin-bottom: 2rem;
+}

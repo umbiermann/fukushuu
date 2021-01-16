@@ -1,0 +1,41 @@
+{
+  "name": "fukushuu",
+  "version": "2.0.0",
+  "description": "Practice web app for revising Japanese grammar",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NODE_MODULES_CACHE=false NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umbiermann/fukushuu.git"
+  },
+  "author": "Ulf Morten Biermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umbiermann/fukushuu/issues"
+  },
+  "homepage": "https://github.com/umbiermann/fukushuu#readme",
+  "engines": {
+    "node": "14.15.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "kuroshiro": "^1.1.2",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "mongoose": "^5.11.12"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7",
+    "prettier": "2.2.1"
+  }
+}
