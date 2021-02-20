@@ -102,7 +102,7 @@ router.get("/next/:id/:filterCollections?", auth, (req, res) => {
                 "Review"
               )[0];
 
-              if (nextCard?.progress < 0) {
+              if (nextCard?.progress <= 0) {
                 res.json(nextCard);
               } else {
                 res.json(null);
