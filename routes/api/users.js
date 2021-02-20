@@ -9,8 +9,8 @@ const auth = require("../../middleware/auth");
 const User = require("../../models/user");
 const Card = require("../../models/card");
 const Collection = require("../../models/collection");
-const exampleCards = require("../../lib/example-data/exampleCards");
-const exampleLogs = require("../../lib/example-data/exampleLogs");
+const { exampleCards } = require("../../lib/example-data/exampleCards");
+const { exampleLogs } = require("../../lib/example-data/exampleLogs");
 
 // @route POST api/users
 // @desc Register new user
