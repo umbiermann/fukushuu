@@ -11,7 +11,7 @@
   height: globals.$header-height;
   color: rgba(245, 245, 245, 1);
   border-bottom: 7px solid #303030;
-  z-index: 1;
+  z-index: 10;
   flex-wrap: nowrap !important;
 
   .logo {
